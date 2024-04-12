@@ -1,0 +1,110 @@
+pre,code{
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-size: 13px;
+}
+/*
+--基本構成--
+<div class="Code">
+<pre class="line">[各行]</pre>
+<pre class="MainCode">[主なコード]</pre>
+</div>
+*/
+pre.MainCode{
+    color: #eeeeee;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #f9f9f9;
+    background-color: #444;
+    width: 100%;
+    border-radius: 0px 6px 6px 0px;
+    border: solid 1px #d6dde4;
+    border-left: #444;
+    overflow-wrap: break-word;
+}
+pre.line{
+    background-color: #444;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-align: right;
+    border-radius: 6px 0px 0px 6px;
+    border: solid 1px #d6dde4;
+    border-right: #444;
+    color: #c1c4c7
+}
+div.Code{
+    display: flex;
+    width: 45%
+}
+/*
+--色付け--
+基本はVSCodeを意識して作られた配色となっているので、VSCodeを見ながら<code class="[クラス名]"></code>を指定してやってください。
+想定してる使い方
+.codeBlue: htmlタグなど
+.codeOrange: 文字列など
+.codeLightGreen: クラスなど
+.codenumber: 数値など
+.codePurple: 予約語など
+.codeVar-Option: 変数など
+.codeYelow: 関数など
+.codeComment: コメントアウトなど
+.codeLemon: CSSのclass名など
+*/
+code.codeBlue{
+    color: #1188dd;
+}
+code.codeOrange{
+    color: #efc17c;
+}
+code.codeLightGreen{
+    color: #22eecc;
+}
+code.codenumber{
+    color: #bbffcc;
+}
+code.codePurple{
+    color: #dda0ee;
+}
+code.codeVar-Option{
+    color: #99eeff;
+}
+code.codeYelow{
+    color: #ffffaa;
+}
+code.codeComment{
+    color: #60ac42;
+}
+code.codeLemon{
+    color: #f1dc96;
+}
+/*aタグにも適用*/
+code.codeBlue a{
+    color: #1188dd;
+}
+code.codeOrange a{
+    color: #efc17c;
+}
+code.codeLightGreen a{
+    color: #22eecc;
+}
+code.codenumber a{
+    color: #bbffcc;
+}
+code.codePurple a{
+    color: #dda0ee;
+}
+code.codeVar-Option a{
+    color: #99eeff;
+}
+code.codeYelow a{
+    color: #ffffaa;
+}
+code.codeComment a{
+    color: #60ac42;
+}
+code.codeLemon a{
+    color: #f1dc96;
+}
+
+/*
+Copyright (c) 2022 MIYUKINNGU
+*/
