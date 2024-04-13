@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="../index.css" type="text/css">
         <title>MIYUKINNGUの技術記事</title>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     </head>
     <body>
         <header>
@@ -52,7 +54,7 @@
                 <p class="text"><b>空間上の点のx座標y座標それぞれをz座標で割る</b></p>
                 <p class="text">です。とてもシンプル。これは中学レベルの相似の考え方から導出することが可能です。暇ならやってみてください。</p>
                 <p class="text">ヒントはカメラの視線を底辺とする直角三角形で考える事でしょうか？</p>
-                <!--ここに数式の画像を挟む-->
+                <script type="math/tex; mode=display" id="MathJax-Element-1">\left(x',y'\right)=\left(\frac{x}{z},\frac{y}{z}\right)</script>
                 <p class="text">さて、これさえ理解してしまえば後は点同士を線でつなぐだけで3Dを描画できます。</p>
                 <p class="text">あら簡単。もう終わりですか？(※終わりではないです)</p>
                 <h2 class="text" id="movecamera">カメラを移動させてみよう</h2>
@@ -63,10 +65,9 @@
                 <p class="text">少しややこしいですね。とにかくカメラが固定されて動けなかったとしてもそう見せかけることは容易だということです</p>
                 <p class="text">これで先ほどの透視投影をする大前提を満たしますね。</p>
                 <p class="text">では式にしてみましょう。</p>
-                <p class="text">オブジェクトの移動量をu=(a,b,c)とし、カメラの移動量をv=(p,q,r)とする。(u,vはどちらも3次元ベクトル)</p>
+                <p class="text">オブジェクトの移動量を<script type="math/tex" id="MathJax-Element-1">u=\left(a,b,c\right)</script>とし、カメラの移動量を<script type="math/tex" id="MathJax-Element-1">v=\left(p,q,r\right)</script>とする。(<script type="math/tex" id="MathJax-Element-1">u,v</script>はどちらも3次元ベクトル)</p>
                 <p class="text">この時のカメラからの相対的な位置関係は</p>
-                <p class="text">u-v=(a-p,b-q,c-r)</p>
-                <!--できれば上のも数式に置き換えたい-->
+                <script type="math/tex; mode=display" id="MathJax-Element-1">u-v=\left(a-p,b-q,c-r\right)</script>
                 <p class="text">である</p>
                 <p class="text">終わりです。あとは先ほどの透視投影の式にこの式を入れれば移動については問題ありません。</p>
                 <p class="text">移動は各自で操作キーを割り当てていい感じに移動できるようにしてください。スライダー方式でも問題ないでしょう</p>
@@ -98,11 +99,8 @@
                 <p class="text">これのメリットは非常にたくさんあり、3Dの回転、姿勢を表すのに最も適していると思います。</p>
                 <p class="text">唯一のデメリットは保存される値を見てもどのような回転かがイメージしにくいことですね。</p>
                 <p class="text">ではクォータニオンとはいったい何なのでしょうか？</p>
-                <!--
-
-                <p class="text"></p>
-
-                -->
+                <p class="text">クォータニオンとは数学的には複素数の拡張を行った物です</p>
+                <p class="text">プログラミングで複素数ってどうやって扱うねって感じがしますがこれはベクトルに置き換えて考えることで実現させます</p>
             </div>
         </main>
     </body>
