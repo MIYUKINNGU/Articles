@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="../index.css" type="text/css">
         <title>MIYUKINNGUの技術記事</title>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});window.MathJax = {chtml: {scale: 1.2,mtextInheritFont: true}};</script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {scale:1.2,matchFontHeight:true}});</script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     </head>
     <body>
@@ -79,8 +79,8 @@
                 <p class="text">視錐台とはカメラの視点から見える範囲のことを指し、それがこたつのような形(これを錐台という)をしていることから来ています</p>
                 <!--視錐台の画像を貼る-->
                 <p class="text">視錐台の範囲に入ったことを確かめるためには直線の方程式からその範囲に入っていることを地道に確認するしかないです。</p>
-                <p class="text">そう、AND条件地獄です。数学の○＜x＜○とプログラミングは非常に相性が悪い...(Pythonでは謎に数学の時のように入力しても正しい評価になるが)</p>
-                <p class="text">直線の方程式はax+by+cz=d(a,b,c,d∊ℝ)ですね。なので地道に比較するしかない...</p>
+                <p class="text">そう、AND条件地獄です。数学の○$\ltx\lt$○とプログラミングは非常に相性が悪い...(Pythonでは謎に数学の時のように入力しても正しい評価になるが)</p>
+                <p class="text">直線の方程式は$ax+by+cz=d\left(a,b,c,d\in \mathbb{R}\right)$ですね。なので地道に比較するしかない...</p>
                 <p class="text">でも実は絶対値を使うと多少楽に作れる</p>
                 <p class="text">係数の値の決め方は画角から考える必要があります。ってことで次は画角の変更方法</p>
                 <h2 class="text" id="viewingangle">画角の変更方法</h2>
@@ -89,9 +89,9 @@
                 <p class="text">やり方は比較的シンプルですが、三角関数を使うことになります。</p>
                 <p class="text">これについては画角を変更できるようにしたときに同時にDesmosでグラフ化させているので良ければぜひ見てみてください</p>
                 <p class="text"><a href="https://www.desmos.com/calculator/vorrseafx8">画角と座標変換の式の関係 - desmos</a></p>
-                <p class="text">一応このグラフで注釈をするとcot(x)は1/tan(x)と等しいです。つまりtan(x)の逆数ですね。(逆関数じゃあないよ！)</p>
+                <p class="text">一応このグラフで注釈をすると$\cot\left(x\right)$は$\frac{1}{\tan\left(x\right)}$と等しいです。つまり$\tan\left(x\right)$の逆数ですね。(逆関数じゃあないよ！)</p>
                 <p class="text">導出はスクリーンの高さの1/2を直角三角形の高さとしたサインコサイン三角形の比で考えると良いでしょう</p>
-                <p class="text">Fl変数は焦点距離を求めています。焦点距離から調整しようというわけですね</p>
+                <p class="text">$F_l$変数は焦点距離を求めています。焦点距離から調整しようというわけですね</p>
                 <p class="text">このグラフで式の関係も示されてるので話すことがないですね... 次に進みましょう。</p>
                 <h2 class="text" id="rotate">カメラを回転させてみよう</h2>
                 <p class="text">さて回転です。カメラを回転させてみましょう。ここまで来たら回転もやりたいですねぇ</p>
